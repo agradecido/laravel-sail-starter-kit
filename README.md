@@ -1,6 +1,7 @@
 # Laravel 10 with Sail from scratch
 
 ## Quick setup
+Alternatively, you can clone this repository to save some of the work ;)
 
 ### Prerequisites
 Ensure that [PHP Composer](https://getcomposer.org) is installed on your system. If it's not, [install it following these instructions](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-**macos**).
