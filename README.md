@@ -63,12 +63,12 @@ Laravel's powerful database migration feature allows you to define and manage yo
 
 To run your database migrations using Laravel Sail, execute the following command:
     
-    ./vendor/bin/sail php artisan migrate
+    ./vendor/bin/sail artisan migrate
 
 Remember to create migration files for your database tables before running this command. You can create a new migration using the command:
 
-    ./vendor/bin/sail php artisan make:migration create_your_table_name_table
+    ./vendor/bin/sail artisan make:migration create_your_table_name_table
 
 #### Note: Document Under Development
 
-This document is currently under development and will be updated with more information and guidance as the project evolves. 
+This document is currently under development and will be updated with more information and guidance.
