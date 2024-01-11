@@ -1,6 +1,6 @@
-### Laravel 10 with Sail from scratch
+# Laravel 10 with Sail from scratch
 
 ## Quick setup
 
-# Install Laravel Sail
+### Install Laravel Sail
 ´´´docker context use default´´´
