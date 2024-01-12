@@ -28,7 +28,7 @@ jobs:
     - name: Install NPM dependencies
       run: npm install
     - name: Compile assets
-      run: npm run production # o `npm run dev` dependiendo de tus necesidades
+      run: npm run dev # o `npm run production` dependiendo de tus necesidades
     - name: Install PHP dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
     - name: Copy .env
