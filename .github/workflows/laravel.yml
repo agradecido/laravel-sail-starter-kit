@@ -30,7 +30,7 @@ jobs:
     - name: List files in the working directory
       run: ls -la
     - name: List build directory
-      run: ls -l public/build
+      run: ls -l ./public/build
     - name: Install PHP dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
     - name: Copy .env
@@ -44,7 +44,7 @@ jobs:
         mkdir -p database
         touch database/database.sqlite
     - name: List build directory
-      run: ls -l public/build
+      run: ls -l ./public/build
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
