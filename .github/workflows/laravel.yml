@@ -20,6 +20,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
           node-version: '14' # o la versión que necesites
+    - uses: actions/checkout@v3
     - name: Print working directory
       run: pwd
     - name: List files in the working directory
@@ -28,7 +29,6 @@ jobs:
       run: npm install
     - name: Compile assets
       run: npm run production # o `npm run dev` dependiendo de tus necesidades
-    - uses: actions/checkout@v3
     - name: Install PHP dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
     - name: Copy .env
