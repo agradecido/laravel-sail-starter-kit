@@ -22,12 +22,12 @@ jobs:
           node-version: '14' # o la versión que necesites
     - name: Print working directory
       run: pwd
+    - name: List files in the working directory
+      run: ls -la
     - name: Install NPM dependencies
       run: npm install
-      working-directory: /home/runner/work/laravel-sail-starter-kit
     - name: Compile assets
       run: npm run production # o `npm run dev` dependiendo de tus necesidades
-      working-directory: /home/runner/work/laravel-sail-starter-kit
     - uses: actions/checkout@v3
     - name: Install PHP dependencies
       run: composer install --prefer-dist --no-progress --no-interaction
