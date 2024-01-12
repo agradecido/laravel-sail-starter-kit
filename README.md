@@ -181,6 +181,3 @@ For detailed usage and customization instructions, refer to the [Laravel Breeze 
 ## Document Under Development
 This document is currently under development and will be updated with more information and guidance.
 
----
-
-Alternatively, you can clone this repository to save some of the work ;)
