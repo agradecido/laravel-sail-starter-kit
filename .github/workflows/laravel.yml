@@ -21,14 +21,14 @@ jobs:
       with:
           node-version: '14' # o la versión que necesites
     - uses: actions/checkout@v3
-    - name: Print working directory
-      run: pwd
-    - name: List files in the working directory
-      run: ls -la
     - name: Install NPM dependencies
       run: npm install
     - name: Compile assets
       run: npm run build
+    - name: Print working directory
+      run: pwd
+    - name: List files in the working directory
+      run: ls -la
     - name: List build directory
       run: ls -l public/build
     - name: Install PHP dependencies
