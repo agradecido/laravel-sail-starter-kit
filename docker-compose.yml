@@ -1,4 +1,12 @@
 services:
+    mailcatcher:
+        container_name: "${COMPOSE_PROJECT_NAME}-smtp"
+        restart: on-failure
+        image: ${FAKESMTP_IMAGE}
+        ports:
+        - "${MAIL_UI_PORT}:1080"
+        - "${MAIL_PORT}:1025"
+
     laravel.test:
         build:
             context: ./vendor/laravel/sail/runtimes/8.3

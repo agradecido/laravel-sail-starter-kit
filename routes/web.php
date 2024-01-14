@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +31,4 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('posts', PostController::class);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
