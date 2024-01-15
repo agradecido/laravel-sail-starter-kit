@@ -30,7 +30,7 @@ On Linux we can use these commands (refer to [The Official Guide](https://larave
     
 ```shell
 composer require laravel/sail --dev
-./vendor/bin/sail artisan
+php artisan sail:install
 ```
 
 It is advisable to create an alias like this to facilitate the execution of commands with sail:
@@ -38,8 +38,6 @@ It is advisable to create an alias like this to facilitate the execution of comm
 ```shell
 alias sail='bash vendor/bin/sail'
 ```
-
-
 
 ### Database Connection
 
